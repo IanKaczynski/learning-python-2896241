@@ -2,19 +2,24 @@
 # Example file for parsing and processing JSON
 # LinkedIn Learning Python course by Joe Marini
 #
+ #getting many ERRORS in this code so please refer to the finished code in the same folder!!! *****
 
-import urllib.request 
+import urllib.request
+import json # import the JSON library 
 
 def printResults(data):
     # Use the json module to load the string data into a dictionary
     theJSON = json.loads(data)
+
     
     # now we can access the contents of the JSON like any other Python object
+    if "title" in theJSON["metadata"]: # check if the "title" key is in the metadata
+        print(theJSON["metadata"]["title"]) # print the title of the feed 
 
-    
     # output the number of events, plus the magnitude and each event name  
+    count = theJSON["metadata"]["count"] # get the value associated with the key "count"
+    print(str(count) + " events recorded") # print the number of events recorded
 
-    
     # for each event, print the place where it occurred
 
 
@@ -33,6 +38,11 @@ def main():
     # Open the URL and read the data
     webUrl = urllib.request.urlopen(urlData)
     print ("result code: " + str(webUrl.getcode()))
+    if (webUrl.getcode() == 200):
+        data = webUrl.read()
+        printResults(data)
+    else:
+        print("Received an error from server, cannot retrieve results " + str(webUrl.getcode()))
   
 
 if __name__ == "__main__":
