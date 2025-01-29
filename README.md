@@ -1,5 +1,5 @@
 # Learning Python
-This is the repository for the LinkedIn Learning course Learning Python. The full course is available from [LinkedIn Learning][lil-course-url].
+This is the (a fork) of the repository for the LinkedIn Learning course Learning Python. I did not make this course, but I cloned it to keep organized. The content is only used for educational purposes and is not used commericially or within an organization.  This repo is intended to be private and not shared with anyone. This does not mean my code is correct, original, or free of errors. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![Learning Python][lil-thumbnail-url] 
 
@@ -22,7 +22,7 @@ Senior Director of Product and Engineering
 
                             
 
-Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/joe-marini).
+Check out Joe's other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/joe-marini).
 
 [lil-course-url]: https://www.linkedin.com/learning/learning-python-14393370
 [lil-thumbnail-url]: https://cdn.lynda.com/course/2896241/2896241-1637338967910-16x9.jpg
